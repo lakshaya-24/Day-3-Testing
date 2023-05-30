@@ -1,0 +1,119 @@
+{
+  "id": "95619afb-6eda-48c4-816e-9b4ba47ad9f6",
+  "version": "2.0",
+  "name": "Day 3",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "55051f1b-196d-4db7-855c-a83bba91f7a6",
+    "name": "question1",
+    "commands": [{
+      "id": "088c8ac8-3471-4be3-a30b-bc40030cc70e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66ba771c-f20a-4892-a6eb-6088d5c19ee1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c2c0d17-bae2-4e79-a0cd-93209c8b7b87",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Laptops & Notebooks",
+      "targets": [
+        ["linkText=Laptops & Notebooks", "linkText"],
+        ["css=.show:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Laptops & Notebooks')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=18')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Laptops & Notebooks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec14ce00-de6b-4ac6-b3bc-e7aa61884e77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Macs (0)",
+      "targets": [
+        ["linkText=Macs (0)", "linkText"],
+        ["css=.show li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Macs (0)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[2]/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=18_46')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Macs (0)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "406d1901-9d06-401d-954d-1e006bf5cd7b",
+    "name": "question2",
+    "commands": [{
+      "id": "00ed9205-9108-44ab-9ab0-ebf574b0cc2f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b37f9a2c-c08c-4714-9698-e7011df09d71",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1022x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "865077ad-a9c0-4b4d-97eb-3d32015df530",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones & PDAs",
+      "targets": [
+        ["linkText=Phones & PDAs", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones & PDAs')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=24')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones & PDAs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "262da70c-54af-4021-841b-044941421fa4",
+      "comment": "",
+      "command": "storeText",
+      "target": "linkText=HTC Touch HD",
+      "targets": [],
+      "value": "var"
+    }, {
+      "id": "344e7ba7-7367-4331-991c-b6af78ab2d28",
+      "comment": "",
+      "command": "echo",
+      "target": "${var}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4686cb78-338d-485b-b22f-d4375bd58733",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e0d5029-bb2c-42ad-a4b2-636a113a8265",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55051f1b-196d-4db7-855c-a83bba91f7a6"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}

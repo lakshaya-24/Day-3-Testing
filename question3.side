@@ -1,0 +1,164 @@
+{
+  "id": "95619afb-6eda-48c4-816e-9b4ba47ad9f6",
+  "version": "2.0",
+  "name": "Day 3",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "55051f1b-196d-4db7-855c-a83bba91f7a6",
+    "name": "Untitled",
+    "commands": [{
+      "id": "088c8ac8-3471-4be3-a30b-bc40030cc70e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66ba771c-f20a-4892-a6eb-6088d5c19ee1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c2c0d17-bae2-4e79-a0cd-93209c8b7b87",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Laptops & Notebooks",
+      "targets": [
+        ["linkText=Laptops & Notebooks", "linkText"],
+        ["css=.show:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Laptops & Notebooks')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=18')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Laptops & Notebooks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec14ce00-de6b-4ac6-b3bc-e7aa61884e77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Macs (0)",
+      "targets": [
+        ["linkText=Macs (0)", "linkText"],
+        ["css=.show li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Macs (0)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[2]/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=18_46')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Macs (0)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8e49a9c6-fcee-4017-bdc2-e6663d7aa651",
+    "name": "queston3",
+    "commands": [{
+      "id": "1b6f1d59-02f8-470a-bb13-59d4d4e8260b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22388f4d-96ff-420a-a0bb-0d472b7cb646",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed260642-e785-4e12-b73d-041b9a4627d4",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Your Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27d23174-7aae-49ce-8b30-b12817a83ec2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageUrl"
+    }, {
+      "id": "4392d7b9-1c59-49d5-969e-09d0dfb6cce2",
+      "comment": "",
+      "command": "echo",
+      "target": "${pageUrl}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b803a6f-65cf-470d-9200-11944175521d",
+      "comment": "",
+      "command": "assert",
+      "target": "pageUrl",
+      "targets": [],
+      "value": "https://demo.opencart.com/"
+    }, {
+      "id": "d4ebc935-a5e5-4e3b-85aa-f64d97cae4f9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ebd711e8-8f96-49d2-aef6-f57b254611b7",
+    "name": "ss\\",
+    "commands": [{
+      "id": "4bdc492b-6be9-41b5-975a-e71e5f574c78",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7066f00-950b-4f70-8c54-1f92f9359c3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "461e6ff9-7ae6-4a6d-bf7c-b8c63b93906d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Your Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e96ab4fb-ec38-4b59-911a-4a2e08d753b1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageUrl"
+    }, {
+      "id": "d2006b73-cccf-4a25-9b32-42eac7c54f0d",
+      "comment": "",
+      "command": "echo",
+      "target": "${pageUrl}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dfc7e44-ba7c-4ac3-9225-e808cfafddcf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e0d5029-bb2c-42ad-a4b2-636a113a8265",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55051f1b-196d-4db7-855c-a83bba91f7a6"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
